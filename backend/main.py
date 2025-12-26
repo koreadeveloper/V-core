@@ -39,12 +39,7 @@ app = FastAPI(title="VideoInsight AI API", version="1.0.0")
 
 # CORS configuration - must not use "*" with allow_credentials=True
 origins = [
-    "http://localhost:3000",
-    "http://127.0.0.1:3000",
-    "http://localhost:5173",  # Vite dev server
-    "http://127.0.0.1:5173",
-    "http://localhost:5000",  # Self-origin for testing
-    "http://127.0.0.1:5000",
+    "*", # Allow all origins for now to fix deployment issues
 ]
 
 app.add_middleware(

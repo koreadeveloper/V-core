@@ -57,8 +57,9 @@ const App: React.FC = () => {
 
   // Restore state from history on reload if on /results
   useEffect(() => {
-    if (location.pathname === '/results' && !analysisResult) {
-      const history = import('./stores/historyStore').then(mod => {
+    // Don't redirect if we are currently loading a new analysis
+    if (location.pathname === '/results' && !analysisResult && !isLoading) {
+      import('./stores/historyStore').then(mod => {
         const items = mod.loadHistory();
         if (items.length > 0) {
           const latest = items[0]; // Sort by timestamp if needed, but usually index 0 is newest or updated
@@ -71,7 +72,7 @@ const App: React.FC = () => {
         }
       });
     }
-  }, [location.pathname, analysisResult, navigate]);
+  }, [location.pathname, analysisResult, navigate, isLoading]);
 
   const handleAnalysis = async () => {
     if (!url) return;

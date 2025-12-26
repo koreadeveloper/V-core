@@ -7,9 +7,8 @@ export interface Translations {
 const translations: Record<Language, Translations> = {
     ko: {
         // Hero section
-        heroTitle: '지식은 돈입니다.',
-        heroTitleHighlight: '둘 다 아끼세요.',
-        heroDescription: 'V-Core는 연구팀, 크리에이터, 전문가들이 몇 시간 분량의 영상을 몇 초 만에 실행 가능한 인텔리전스로 변환하도록 도와줍니다.',
+        heroTitle: '당신의 시간을 소중하게',
+        heroDescription: 'V-Core는 그 자산을 가장 가치 있게 사용하는 방법을 제안합니다. 복잡한 영상 속에서 핵심 맥락을 읽어내어, 당신이 바로 행동에 옮길 수 있는 명확한 정보를 제공합니다. 영상 그 이상의 가치를 봅니다.',
         urlPlaceholder: 'YouTube URL을 입력하세요...',
         startAnalysis: '분석 시작 →',
         trustTitle: '혁신적인 팀들이 신뢰합니다',
@@ -100,7 +99,7 @@ const translations: Record<Language, Translations> = {
         knowledgeSearch: '영상 검색...',
         knowledgeNoItems: '저장된 영상이 없습니다.',
         knowledgeAddCategory: '카테고리 추가',
-        knowledgeAllCategory: '전체',
+        knowledgeAllCategory: '전체 동영상',
         knowledgeNotes: '메모',
 
         // Assets page
@@ -206,7 +205,7 @@ const translations: Record<Language, Translations> = {
         knowledgeSearch: 'Search videos...',
         knowledgeNoItems: 'No saved videos.',
         knowledgeAddCategory: 'Add Category',
-        knowledgeAllCategory: 'All',
+        knowledgeAllCategory: 'All Videos',
         knowledgeNotes: 'Notes',
 
         // Assets page
