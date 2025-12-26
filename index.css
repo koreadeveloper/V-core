@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .glass-card {
+    @apply bg-zinc-900/40 backdrop-blur-md border border-white/10;
+  }
+  
+  .hero-gradient {
+    background: radial-gradient(circle at top center, #1a1a1a 0%, #000000 100%);
+  }
+
+  .text-glow {
+    text-shadow: 0 0 20px rgba(163, 230, 53, 0.5);
+  }
+
+  .ramp-button {
+    background: linear-gradient(135deg, #a3e635 0%, #84cc16 100%);
+    color: black;
+    transition: all 0.3s ease;
+  }
+
+  .ramp-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 20px rgba(163, 230, 53, 0.2);
+  }
+}

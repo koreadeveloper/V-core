@@ -1,0 +1,9 @@
+fastapi
+uvicorn
+groq
+langchain-groq
+langchain-core
+langchain-text-splitters
+youtube-transcript-api
+yt-dlp
+python-dotenv

@@ -1,0 +1,8 @@
+{
+  "name": "VideoInsight AI",
+  "description": "A high-performance hub that transforms long videos into actionable knowledge assets like summaries, blog posts, and study notes in seconds.",
+  "requestFramePermissions": [
+    "camera",
+    "microphone"
+  ]
+}
